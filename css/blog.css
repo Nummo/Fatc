@@ -3,8 +3,9 @@
  */
 
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: #555;
+  font-family: "Lucida Sans";
+  background: white;
+ 
 }
 
 h1, .h1,
@@ -14,11 +15,16 @@ h4, .h4,
 h5, .h5,
 h6, .h6 {
   margin-top: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lucida Sans";
   font-weight: normal;
   color: #333;
 }
 
+p {
+	font-color: #ff9096;
+	font-size: 14px;
+
+}
 
 /*
  * Override Bootstrap's default container.
@@ -36,7 +42,7 @@ h6, .h6 {
  */
 
 .blog-masthead {
-  background-color: #428bca;
+  background-color: #ff9096;
   -webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
           box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
 }
@@ -158,7 +164,7 @@ h6, .h6 {
   padding: 40px 0;
   color: #999;
   text-align: center;
-  background-color: #f9f9f9;
+  background-color: #ff9096;
   border-top: 1px solid #e5e5e5;
 }
 .blog-footer p:last-child {
