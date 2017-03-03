@@ -1,0 +1,6 @@
+<?php
+/** 
+front page 
+
+**/
+get_header(); ?>
