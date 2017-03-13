@@ -577,6 +577,72 @@ blockquote:after {
 	outline: none;
 }
 
+
+.strapline {
+    font-family:"Lucida Sans"; 
+    font-size:10px;
+    color:#FFFFFF;
+    font-style: italic;
+    padding: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    text-align: left;
+    margin-bottom: 0cm;
+    margin-top: 0cm;
+}
+
+.supportbutton {
+    width:60%;
+    background-color:#ff9096;
+    /*border: 0.5px solid #6d002f; */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 36px;
+    cursor: pointer;
+    padding: 15px 0px 15px 0px;
+    display: block;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+} 
+
+.supportbutton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.supportbutton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.supportbutton:hover span {
+  padding-right: 25px;
+}
+
+.supportbutton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.quote {
+ font-family:"Lucida Sans"; 
+ color: #ff9096;
+ font-style: italic;
+ text-align: right;
+ font-size: 28px;
+ padding-right: 10px;
+ padding-left: 10px;
+}
 /* Typography for Arabic Font */
 
 html[lang="ar"] body,
