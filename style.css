@@ -9,7 +9,6 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: twentyseventeen
 Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
-
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
@@ -590,7 +589,7 @@ blockquote:after {
     margin-top: 0cm;
 }
 
-.supportbutton {
+.aatc-supportbutton {
     width:60%;
     background-color:#E84B54;
     /*border: 0.5px solid #6d002f; */
@@ -599,7 +598,7 @@ blockquote:after {
     text-decoration: none;
     font-size: 36px;
     cursor: pointer;
-    padding: 15px 0px 15px 0px;
+    padding: 15px 0px 15px 10px;
     display: block;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
@@ -633,7 +632,7 @@ blockquote:after {
   right: 0;
 }
 
-.quote {
+.aatc-quote {
  font-family:"Lucida Sans"; 
  color: #E84B54;
  font-style: italic;
@@ -1458,7 +1457,7 @@ a:hover .nav-title,
 }
 
 .main-navigation a:hover {
-	color: #767676;
+	color: #6D002F;
 }
 
 /* Menu toggle */
@@ -1640,7 +1639,7 @@ body {
 	letter-spacing: 0.08em;
 	margin: 0;
 	padding: 0;
-	text-transform: uppercase;
+	
 }
 
 .site-title,
@@ -1742,10 +1741,10 @@ body:not(.title-tagline-hidden) .site-branding-text {
 .has-header-video .custom-header-media video,
 .has-header-video .custom-header-media iframe {
 	position: fixed;
-	height: auto;
+	
 	left: 50%;
 	max-width: 1000%;
-	min-height: 100%;
+	min-height: 50%;
 	min-width: 100%;
 	min-width: 100vw; /* vw prevents 1px gap on left that 100% has */
 	width: auto;
@@ -1968,7 +1967,7 @@ body.page:not(.twentyseventeen-front-page) .entry-title {
 }
 
 .entry-title a {
-	color: #ff9096;
+	/*color: #ff9096;*/
 	text-decoration: none;
 	margin-left: -2px;
 }
@@ -2887,7 +2886,8 @@ h2.widget-title {
 /* Text widget */
 
 .widget_text {
-	word-wrap: break-word;
+	/*word-wrap: break-word;*/
+	
 }
 
 /* RSS Widget */
@@ -4244,8 +4244,8 @@ object {
 	}
 
 	.site-footer .widget-column.footer-widget-1 {
-		float: left;
-		width: 36%;
+		/*float: left;*/
+		width: auto;
 	}
 
 	.site-footer .widget-column.footer-widget-2 {
