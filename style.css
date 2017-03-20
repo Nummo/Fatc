@@ -1403,7 +1403,7 @@ a:hover .nav-title,
 	list-style: none;
 	margin: 0;
 	padding: 0 1.5em;
-	text-align: left;
+	text-align: right;
 }
 
 /* Hide the menu on small screens when JavaScript is available.
