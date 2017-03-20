@@ -52,7 +52,7 @@ Styles based on Normalize v5.0.0 @link https://github.com/necolas/normalize.css
 --------------------------------------------------------------*/
 
 html {
-	font-family: sans-serif;
+	font-family: "Lucida Sans";
 	line-height: 1.15;
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
@@ -183,7 +183,7 @@ input,
 optgroup,
 select,
 textarea {
-	font-family: sans-serif;
+	font-family: "Lucida Sans";
 	font-size: 100%;
 	line-height: 1.15;
 	margin: 0;
@@ -417,7 +417,7 @@ input,
 select,
 textarea {
 	color: #333;
-	font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+	font-family: "Lucida Sans", "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
 	font-size: 15px;
 	font-size: 0.9375rem;
 	font-weight: 400;
@@ -452,37 +452,37 @@ h1 {
 }
 
 h2 {
-	color: #666;
+	color: #6D002F;
 	font-size: 20px;
 	font-size: 1.25rem;
 	font-weight: 300;
 }
 
 h3 {
-	color: #333;
+	color: #6D002F;
 	font-size: 18px;
 	font-size: 1.125rem;
 	font-weight: 300;
 }
 
 h4 {
-	color: #333;
+	color: #6D002F;
 	font-size: 16px;
 	font-size: 1rem;
 	font-weight: 800;
 }
 
 h5 {
-	color: #767676;
+	color: #6D002F;
 	font-size: 13px;
 	font-size: 0.8125rem;
 	font-weight: 800;
 	letter-spacing: 0.15em;
-	text-transform: uppercase;
+	
 }
 
 h6 {
-	color: #333;
+	color: #6D002F;
 	font-size: 15px;
 	font-size: 0.9375rem;
 	font-weight: 800;
@@ -592,9 +592,9 @@ blockquote:after {
 
 .supportbutton {
     width:60%;
-    background-color:#ff9096;
+    background-color:#E84B54;
     /*border: 0.5px solid #6d002f; */
-    color: white;
+    color: #FFFFFF;
     text-align: center;
     text-decoration: none;
     font-size: 36px;
@@ -635,7 +635,7 @@ blockquote:after {
 
 .quote {
  font-family:"Lucida Sans"; 
- color: #ff9096;
+ color: #E84B54;
  font-style: italic;
  text-align: right;
  font-size: 28px;
@@ -1390,7 +1390,7 @@ a:hover .nav-title,
 
 .navigation-top .current-menu-item > a,
 .navigation-top .current_page_item > a {
-	color: #FFFFFF;
+	color: #ff9096;
 }
 
 .main-navigation {
