@@ -1390,7 +1390,7 @@ a:hover .nav-title,
 
 .navigation-top .current-menu-item > a,
 .navigation-top .current_page_item > a {
-	color: #767676;
+	color: #FFFFFF;
 }
 
 .main-navigation {
@@ -1399,7 +1399,7 @@ a:hover .nav-title,
 }
 
 .main-navigation ul {
-	background: #fff;
+	background: #FF9096;
 	list-style: none;
 	margin: 0;
 	padding: 0 1.5em;
@@ -2808,7 +2808,7 @@ h2.widget-title {
 	font-weight: 800;
 	letter-spacing: 0.1818em;
 	margin-bottom: 1.5em;
-	text-transform: uppercase;
+	
 }
 
 .widget-title a {
