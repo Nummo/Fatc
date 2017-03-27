@@ -71,7 +71,7 @@ section {
 }
 
 h1 {
-	font-size: 2em;
+	/*font-size: 2em;*/
 	margin: 0.67em 0;
 }
 
@@ -446,7 +446,7 @@ h6:first-child {
 
 h1 {
 	font-size: 24px;
-	font-size: 1.5rem;
+	/*font-size: 1.5rem;*/
 	font-weight: 300;
 }
 
@@ -590,8 +590,8 @@ blockquote:after {
 }
 
 .aatc-supportbutton {
-    width:60%;
-    background-color:#E84B54;
+    width:100%;
+    background-color:#ff9096;
     /*border: 0.5px solid #6d002f; */
     color: #FFFFFF;
     text-align: center;
@@ -1368,9 +1368,9 @@ a:hover .nav-title,
 
 .navigation-top {
 	background: #ff9096;
+	font-color: #ffffff;
 	border-bottom: 1px solid #ff9096;
-	border-top: 1px solid #ff9096;
-	
+	border-top: 1px solid #ff9096;	
 	font-size: 16px;
 	font-size: 1rem;
 	position: relative;
@@ -1381,16 +1381,44 @@ a:hover .nav-title,
 	padding: 0;
 }
 
-.navigation-top a {
+.main-navigation  {
+	font-color: #ffffff
+	background: #ff9096;
+	list-style: none;
+	margin: 0;
+	padding: 0 1.5em;
+	text-align: right;
+}
+
+.main-navigation ul {
+	background: #ff9096;
+	list-style: none;
+	margin: 0;
+	padding: 0 1.5em;
+	text-align: right;
+}
+
+.navigation-top ul   {
 	color: #ffffff;
 	font-weight: 600;
 	-webkit-transition: color 0.2s;
 	transition: color 0.2s;
 }
 
-.navigation-top .current-menu-item > a,
+
+.navigation-top ul a  {
+	color: #ffffff;
+	font-weight: 600;
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+}
+
+.navigation-top .current-menu-item > ul a, {
+	color: #ffffff;
+}
+
 .navigation-top .current_page_item > a {
-	color: ##ffffff;
+	color: #ffffff;
 }
 
 .main-navigation {
@@ -1398,25 +1426,21 @@ a:hover .nav-title,
 	display: block;
 }
 
-.main-navigation ul {
-	background: ##ffffff;
-	list-style: none;
-	margin: 0;
-	padding: 0 1.5em;
-	text-align: right;
-}
+
 
 
 /*logo */
 
-.custom-top-logo {
+.aatc-logo {
 	float: right ;
-margin:5px 10px;
+	margin:5px 10px;
+	max-width:150px;
+	max-height:150px;
 	}
 	
-.custom-top-logo img {
+.aatc-logo img {
 	max-width:150px;
-	height:auto;
+	height: auto;
 }	
 
 /* Hide the menu on small screens when JavaScript is available.
@@ -1481,7 +1505,7 @@ margin:5px 10px;
 	border: 0;
 	-webkit-box-shadow: none;
 	box-shadow: none;
-	color: #222;
+	color: #fff;
 	display: none;
 	font-size: 14px;
 	font-size: 0.875rem;
@@ -1534,7 +1558,7 @@ margin:5px 10px;
 	border: 0;
 	-webkit-box-shadow: none;
 	box-shadow: none;
-	color: #222;
+	color: #fff;
 	display: block;
 	font-size: 16px;
 	right: -0.5em;
@@ -1649,7 +1673,8 @@ body {
 	font-size: 24px;
 	font-size: 1.5rem;
 	font-weight: 800;
-	line-height: 1.25;
+	line-height: 1.25
+	;
 	letter-spacing: 0.08em;
 	margin: 0;
 	padding: 0;
@@ -1847,6 +1872,11 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 13.2 Front Page
 --------------------------------------------------------------*/
 
+.aatc-page-title {
+ font-family:"Lucida Sans"; 
+ color: #ff9096;
+}
+
 .twentyseventeen-front-page .site-content {
 	padding: 0;
 }
@@ -1900,7 +1930,7 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 }
 
 .twentyseventeen-panel .entry-header .edit-link {
-	font-size: 14px;
+	font-size: 214px;
 	font-size: 0.875rem;
 }
 
@@ -1909,7 +1939,7 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 .twentyseventeen-front-page .panel-content .recent-posts article {
 	border: 0;
 	color: #333;
-	margin-bottom: 3em;
+	margin-bottom: 1em;
 }
 
 .recent-posts .entry-header {
@@ -1927,7 +1957,7 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 .twentyseventeen-panel .recent-posts .entry-header .edit-link {
 	color: #222;
 	display: inline-block;
-	font-size: 11px;
+	font-size: 211px;
 	font-size: 0.6875rem;
 	margin-left: 1em;
 }
@@ -1972,11 +2002,11 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 .page-title,
 body.page:not(.twentyseventeen-front-page) .entry-title {
 	color: #222;
-	font-size: 14px;
+	/*font-size: 14px;*/
 	font-size: 0.875rem;
 	font-weight: 800;
 	letter-spacing: 0.14em;
-	text-transform: uppercase;
+	
 }
 
 .entry-header .entry-title {
@@ -2210,7 +2240,7 @@ body:not(.twentyseventeen-front-page) .entry-header {
 	letter-spacing: 0.1818em;
 	padding-left: 2.5em;
 	position: relative;
-	text-transform: uppercase;
+	
 }
 
 .entry-footer .cat-links + .tags-links {
@@ -2303,11 +2333,11 @@ body:not(.twentyseventeen-front-page) .entry-header {
 	background: transparent;
 	/*color: #767676;*/
 	display: block;
-	font-size: 11px;
+	/*font-size: 11px;*/
 	font-size: 0.6875rem;
 	letter-spacing: 0.1818em;
 	margin-bottom: 1em;
-	text-transform: uppercase;
+	
 }
 
 .nav-title {
@@ -2337,7 +2367,7 @@ body:not(.twentyseventeen-front-page) .entry-header {
 }
 
 .page .entry-header .edit-link {
-	font-size: 14px;
+	font-size: 214px;
 	font-size: 0.875rem;
 }
 
@@ -2363,7 +2393,7 @@ body:not(.twentyseventeen-front-page) .entry-header {
 
 .error404 .page-content .search-form,
 .search .page-content .search-form {
-	margin-bottom: 3em;
+	margin-bottom: 1em;
 }
 
 /*--------------------------------------------------------------
@@ -2452,13 +2482,13 @@ body:not(.twentyseventeen-front-page) .entry-header {
 .aatc-footer {
     position:fixed;
     height:15px;
-    background-color:white;
+    background-color: #ff9096;
     bottom:0px;
     left:0px;
     right:0px;
     margin-bottom:0px;
     display: block;
-    font-size: 12px;
+    font-size: 10px;
     font-family:"Lucinda Sans";
     text-align: right;
     padding-left: 0px;
@@ -2472,8 +2502,8 @@ body:not(.twentyseventeen-front-page) .entry-header {
   padding:10px 0 12px 3%;
   background: #ff9096;
   font-family: "Lucida Sans";
-  border-top: 6px solid #6D002F;
-  border-bottom: 6px solid #6D002F; 
+  /*border-top: 6px solid #6D002F;
+  border-bottom: 6px solid #6D002F; */
   width: 100%; 
 }
 
@@ -2559,7 +2589,7 @@ body:not(.twentyseventeen-front-page) .entry-header {
 #mc_embed_signup .mc-field-group label {
   display:block; 
   margin-left: 5px;
-  margin-bottom:3px;
+  margin-bottom:1px;
   color: white;
 }
 
@@ -2741,11 +2771,11 @@ body:not(.twentyseventeen-front-page) .entry-header {
 
 .comment-metadata {
 	color: #767676;
-	font-size: 10px;
+	/*font-size: 10px;*/
 	font-size: 0.625rem;
 	font-weight: 800;
 	letter-spacing: 0.1818em;
-	text-transform: uppercase;
+	
 }
 
 .comment-metadata a {
@@ -2761,7 +2791,7 @@ body:not(.twentyseventeen-front-page) .entry-header {
 	color: #333;
 	font-size: 14px;
 	font-size: 0.875rem;
-	margin-bottom: 4em;
+	margin-bottom: 2em;
 }
 
 .comment-reply-link {
@@ -2941,13 +2971,13 @@ h2.widget-title {
 .widget_rss li cite {
 	color: #767676;
 	display: block;
-	font-size: 10px;
+	/*font-size: 10px;*/
 	font-size: 0.625rem;
 	font-style: normal;
 	font-weight: 800;
 	letter-spacing: 0.18em;
 	line-height: 1.5;
-	text-transform: uppercase;
+	
 }
 
 .widget_rss .rss-date {
@@ -3226,7 +3256,7 @@ object {
 	font-size: 0.625rem;
 	font-weight: 800;
 	letter-spacing: 0.1818em;
-	text-transform: uppercase;
+	
 }
 
 .site-content .wp-playlist-item {
@@ -3350,7 +3380,6 @@ object {
 	font-weight: 700;
 	letter-spacing: 1px;
 	padding: 3em;
-	text-transform: uppercase;
 	text-align: center;
 }
 
@@ -3463,8 +3492,8 @@ object {
 	}
 
 	h1 {
-		font-size: 30px;
-		font-size: 1.875rem;
+		font-size: 40px;
+		/*font-size: 1.875rem;*/
 	}
 
 	h2,
@@ -3528,7 +3557,7 @@ object {
 	}
 
 	.panel-content .entry-header {
-		margin-bottom: 4.5em;
+		margin-bottom: 1em;
 	}
 
 	.panel-content .recent-posts .entry-header {
@@ -3550,7 +3579,7 @@ object {
 	/* Site Footer */
 
 	.site-footer {
-		font-size: 16px;
+		font-size: 12px;
 		font-size: 1rem;
 	}
 
@@ -3774,8 +3803,8 @@ object {
 	}
 
 	.main-navigation ul ul {
-		background: #fff;
-		border: 1px solid #bbb;
+		background: #ff9096;
+		border: 1px solid #fff;
 		left: -999em;
 		padding: 0;
 		position: absolute;
@@ -3921,6 +3950,11 @@ object {
 		transform: rotate(90deg);
 	}
 
+	.site-header {
+		color: #fff;
+		top: 2em;
+	}
+
 	.site-header .menu-scroll-down {
 		color: #fff;
 		top: 2em;
@@ -3946,7 +3980,7 @@ object {
 	.twentyseventeen-front-page.has-header-video .site-branding,
 	.home.blog.has-header-image .site-branding,
 	.home.blog.has-header-video .site-branding {
-		margin-bottom: 70px;
+		margin-bottom: 10px;
 	}
 
 	.twentyseventeen-front-page.has-header-image .custom-header-media,
@@ -4188,11 +4222,11 @@ object {
 	.page.page-one-column .entry-header,
 	.twentyseventeen-front-page.page-one-column .entry-header,
 	.archive.page-one-column:not(.has-sidebar) .page-header {
-		margin-bottom: 4em;
+		margin-bottom: 2em;
 	}
 
 	.page:not(.home) #content {
-		padding-bottom: 3.25em;
+		padding-bottom: 2em;
 	}
 
 	/* 404 page */
