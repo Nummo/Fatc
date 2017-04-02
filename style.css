@@ -3564,6 +3564,14 @@ object {
 		margin-left: 1.5em;
 	}
 
+	.nav-strapline {
+		display: none !important;
+	}
+	
+	.nav-strapline p {
+		display: none !important;
+	}
+	
 	/* Site Branding */
 
 	.site-branding {
