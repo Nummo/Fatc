@@ -1485,7 +1485,7 @@ a:hover .nav-title,
 }
 
 .main-navigation > div > ul {
-	border-top: 1px solid #eee;
+	/*border-top: 1px solid #eee;*/
 	padding: 0.75em 1.695em;
 }
 
@@ -1509,7 +1509,7 @@ a:hover .nav-title,
 }
 
 .main-navigation li {
-	border-bottom: 1px solid #eee;
+	/*border-bottom: 1px solid #eee;*/
 	position: relative;
 }
 
