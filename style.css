@@ -4081,9 +4081,9 @@ object {
 	/* Front Page - Recent Posts */
 
 	.page-two-column .panel-content .recent-posts {
-		clear: right;
-		float: right;
-		width: 58%;
+		/*clear: right;
+			float: right*/
+		width:58%;
 	}
 
 	.panel-content .recent-posts article {
