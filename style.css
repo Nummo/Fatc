@@ -429,6 +429,7 @@ h3,
 h4,
 h5,
 h6 {
+	font-family: "Lucida Sans"; 
 	clear: both;
 	line-height: 1.4;
 	margin: 0 0 0.75em;
@@ -441,6 +442,7 @@ h3:first-child,
 h4:first-child,
 h5:first-child,
 h6:first-child {
+	font-family: "Lucida Sans";
 	padding-top: 0;
 }
 
@@ -448,6 +450,8 @@ h1 {
 	font-size: 24px;
 	/*font-size: 1.5rem;*/
 	font-weight: 300;
+	color: #6D002F;
+	font-family: "Lucida Sans";
 }
 
 h2 {
@@ -455,6 +459,7 @@ h2 {
 	font-size: 20px;
 	font-size: 1.25rem;
 	font-weight: 300;
+	font-family: "Lucida Sans";
 }
 
 h3 {
@@ -1398,8 +1403,7 @@ a:hover .nav-title,
 	text-align: right;
 }
 
-.navigation-top ul   {
-	
+.navigation-top ul   {	
 	font-color: #ffffff;
 	font-weight: 600;
 	-webkit-transition: color 0.2s;
@@ -1436,7 +1440,7 @@ a:hover .nav-title,
 .aatc-logo {
 	float: left ;
 	margin: 0px 5px;
-	padding-bottom: 1.5cm;
+	padding-bottom: 1.8cm;
 	max-width:10px;
 	max-height:10px;
 	}
@@ -1473,6 +1477,7 @@ a:hover .nav-title,
 
 
 .js .main-navigation ul,
+.nav-strapline,
 .main-navigation .menu-item-has-children > a > .icon,
 .main-navigation .page_item_has_children > a > .icon,
 .main-navigation ul a > .icon {
@@ -3504,7 +3509,7 @@ object {
 		padding-left: 0;
 	}
 }
- 
+
 .nav-strapline  {
 	float: center;
 	text-indent:15px; 
@@ -3512,14 +3517,7 @@ object {
 	font-size: 11px;
 	font-family:"Lucida Sans"; 
 	}
-	
-	.aatc-logo {
-	float: left ;
-	margin: 0px 5px;
-	padding-bottom: 1.8cm;
-	max-width:10px;
-	max-height:10px;
-	}
+
 
 
 @media screen and (min-width: 30em) {
