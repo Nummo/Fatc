@@ -11,15 +11,25 @@
 ?>
 <nav id="site-navigation" class="main-navigation" role="navigation" aria-label="<?php _e( 'Top Menu', 'twentyseventeen' ); ?>">
 
-
+	<div class="aatc-logo"><a href="http://www.faithaalingan.org/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/faith-white.png" /></a></div>
+	
+	<div class='nav-strapline'><p>An NGO providing care and support to children living with HIV/AIDs</p></div>
 	<button class="menu-toggle" aria-controls="top-menu" aria-expanded="false"><?php echo twentyseventeen_get_svg( array( 'icon' => 'bars' ) ); echo twentyseventeen_get_svg( array( 'icon' => 'close' ) ); _e( 'Menu', 'twentyseventeen' ); ?></button>
 
-<div id="custom-top-logo"><img src="<?php echo site_url(); ?>/assets/cropped-faith-pink-1.jpg" /></div>
+
+
+
+
 	<?php wp_nav_menu( array(
 		'theme_location' => 'top',
 		'menu_id'        => 'top-menu',
 	) ); ?>
 
+
+
+	
+	
+	
 	<?php if ( ( twentyseventeen_is_frontpage() || ( is_home() && is_front_page() ) ) && has_custom_header() ) : ?>
 		<a href="#content" class="menu-scroll-down"><?php echo twentyseventeen_get_svg( array( 'icon' => 'arrow-right' ) ); ?><span class="screen-reader-text"><?php _e( 'Scroll down to content', 'twentyseventeen' ); ?></span></a>
 	<?php endif; ?>
