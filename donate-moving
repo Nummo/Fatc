@@ -1,3 +1,14 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.donateSlides {display:none;}
+</style>
+<body>
+
+
 
 <img class="aligncenter" src="http://faithaalingan.org/wp-content/uploads/2017/03/title2.jpg" alt="" width="676" height="383" />
 
@@ -11,20 +22,40 @@
     <a class="aatc-supportbutton" href="https://armsaroundthechild.charitycheckout.co.uk/faith" target="_blank"> Rest of the world</a>
 </div>
 
-<div class="container-donate">
-<!-- Each image is 450px by 300px -->
-    <div class="photobanner">
-    	<img class="first" src="http://faithaalingan.org/wp-content/uploads/2017/03/clothing.jpg" alt="clothing" />
-    	<img src="http://faithaalingan.org/wp-content/uploads/2017/03/education.jpg" alt="education" />
-    	<img src="http://faithaalingan.org/wp-content/uploads/2017/03/home.jpg" alt="home" />
-    	<img src="http://faithaalingan.org/wp-content/uploads/2017/03/medicine.jpg" alt="medicine" />
-    	<img src="http://faithaalingan.org/wp-content/uploads/2017/03/nutrition.jpg" alt="nutrition" />
-    	<img src="http://faithaalingan.org/wp-content/uploads/2017/03/play.jpg" alt="play" />
-    	<img src="http://faithaalingan.org/wp-content/uploads/2017/03/protection.jpg" alt="protection" />
-    	<img src="http://faithaalingan.org/wp-content/uploads/2017/03/transport.jpg" alt="transport" />
-    	<img src="http://faithaalingan.org/wp-content/uploads/2017/03/education.jpg" alt="education" />
-    	<img src="http://faithaalingan.org/wp-content/uploads/2017/03/home.jpg" alt="home" />
-    	<img src="ttp://faithaalingan.org/wp-content/uploads/2017/03/medicine.jpg" alt="medicine" />
-    	<img src="http://faithaalingan.org/wp-content/uploads/2017/03/nutrition.jpg" alt="nutrition" />
-    </div>
+
+  <img class="donateSlides" src="http://faithaalingan.org/wp-content/uploads/2017/03/clothing.jpg" alt="clothing" style="width:100%">
+  
+  <img class="donateSlides" src="http://faithaalingan.org/wp-content/uploads/2017/03/education.jpg" alt="education" style="width:100%">
+  
+  <img class="donateSlides" src="http://faithaalingan.org/wp-content/uploads/2017/03/home.jpg" alt="home"  style="width:100%">
+  
+  <img class="donateSlides" src="http://faithaalingan.org/wp-content/uploads/2017/03/medicine.jpg" alt="medicine"  style="width:100%">
+  
+  <img class="donateSlides" src="http://faithaalingan.org/wp-content/uploads/2017/03/nutrition.jpg" alt="nutrition"style="width:100%">
+  
+  <img class="donateSlides" src="http://faithaalingan.org/wp-content/uploads/2017/03/play.jpg" alt="play" style="width:100%">
+  
+  <img class="donateSlides" src="http://faithaalingan.org/wp-content/uploads/2017/03/protection.jpg" alt="protection" style="width:100%">
+  
+   <img class="donateSlides" src="http://faithaalingan.org/wp-content/uploads/2017/03/transport.jpg" alt="transport" style="width:100%">
 </div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("donateSlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>
