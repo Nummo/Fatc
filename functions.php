@@ -567,10 +567,19 @@ require get_parent_theme_file_path( '/inc/customizer.php' );
  */
 require get_parent_theme_file_path( '/inc/icon-functions.php' );
 
-/**
- *for donate page auto slideshow
- */
-function myprefix_enqueue_scripts() {
-    wp_enqueue_script( 'my-script', get_stylesheet_directory_uri() . 'assets/js/carousel.js', array(), true );
+/*blog homepage */
+
+if (! function_exists('slug_scripts_masonry') ) :
+if ( ! is_admin() ) :
+function slug_scripts_masonry() {
+    wp_enqueue_script('masonry');
+    wp_enqueue_style('masonry’, get_template_directory_uri().'/css/’);
 }
-add_action( 'wp_enqueue_scripts', 'myprefix_enqueue_scripts' );
+add_action( 'wp_enqueue_scripts', 'slug_scripts_masonry' );
+endif; //! is_admin()
+endif; //! slug_scripts_masonry exists
+
+function new_excerpt_more( $more ) {
+	return ' <a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __('Read More', 'your-text-domain') . '</a>';
+}
+add_filter( 'excerpt_more', 'new_excerpt_more' );
