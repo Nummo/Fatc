@@ -2417,78 +2417,6 @@ body:not(.twentyseventeen-front-page) .entry-header {
 }
 
 
-/*photobanner*/
-
-.container-donate {
-  width: 1000px;
-  overflow: hidden;
-  margin: 50px auto;
-  background: white;
-}
- 
-.photobanner {
-  height: 233px;
-  width: 3550px;
-  margin-bottom: 80px;
-}
-
-.first {
-	-webkit-animation: bannermove 30s linear infinite;
-	   -moz-animation: bannermove 30s linear infinite;
-	    -ms-animation: bannermove 30s linear infinite;
-	     -o-animation: bannermove 30s linear infinite;
-	        animation: bannermove 30s linear infinite;
-}
- 
-@keyframes "bannermove" {
- 0% {
-    margin-left: 0px;
- }
- 100% {
-    margin-left: -2125px;
- }
- 
-}
- 
-@-moz-keyframes bannermove {
- 0% {
-   margin-left: 0px;
- }
- 100% {
-   margin-left: -2125px;
- }
- 
-}
- 
-@-webkit-keyframes "bannermove" {
- 0% {
-   margin-left: 0px;
- }
- 100% {
-   margin-left: -2125px;
- }
- 
-}
- 
-@-ms-keyframes "bannermove" {
- 0% {
-   margin-left: 0px;
- }
- 100% {
-   margin-left: -2125px;
- }
- 
-}
- 
-@-o-keyframes "bannermove" {
- 0% {
-   margin-left: 0px;
- }
- 100% {
-   margin-left: -2125px;
- }
- 
-} 
 
 /* 404 page */
 
@@ -2501,6 +2429,8 @@ body:not(.twentyseventeen-front-page) .entry-header {
 	margin-bottom: 1em;
 }
 
+/* blog */
+.masonry-entry{width:20%}
 /*--------------------------------------------------------------
 13.6 Footer
 --------------------------------------------------------------*/
@@ -4342,7 +4272,7 @@ object {
 	.page.page-one-column .entry-header,
 	.twentyseventeen-front-page.page-one-column .entry-header,
 	.archive.page-one-column:not(.has-sidebar) .page-header {
-		margin-bottom: 4em;
+		margin-top: 4em;
 	}
 
 	.page:not(.home) #content {
