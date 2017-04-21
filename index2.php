@@ -1,17 +1,15 @@
 <?php
 /**
-
  */
-
 get_header(); ?>
 
 <div class="wrap">
 	<?php if ( is_home() && ! is_front_page() ) : ?>
-		<header class="entry-header">
+		<header>
 			<h1><?php single_post_title(); ?></h1>
 		</header>
 	<?php else : ?>
-	<header class="entry-header">
+	<header>
 		<h1 ><?php _e( 'Posts', 'twentyseventeen' ); ?></h1>
 	</header>
 	<?php endif; ?>
@@ -20,7 +18,6 @@ get_header(); ?>
 	<div id="masonry-loop">
 			<?php
 			if ( have_posts() ) :
-
 				/* Start the Loop */
 				while ( have_posts() ) : the_post();
 	
@@ -30,19 +27,14 @@ get_header(); ?>
 					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 					 */
 					get_template_part( 'template-parts/post/content', 'masonry' );
-
 				endwhile;
-
 				the_posts_pagination( array(
 					'prev_text' => twentyseventeen_get_svg( array( 'icon' => 'arrow-left' ) ) . '<span class="screen-reader-text">' . __( 'Previous page', 'twentyseventeen' ) . '</span>',
 					'next_text' => '<span class="screen-reader-text">' . __( 'Next page', 'twentyseventeen' ) . '</span>' . twentyseventeen_get_svg( array( 'icon' => 'arrow-right' ) ),
 					'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentyseventeen' ) . ' </span>',
 				) );
-
 			else :
-
 				get_template_part( 'template-parts/post/content', 'masonry' );
-
 			endif;
 			?>
 
