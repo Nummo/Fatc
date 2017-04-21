@@ -30,7 +30,7 @@
 
 	<div class="panel-content">
 		<div class="wrap">
-			<header class="entry-header">
+			<header>
 				<?php the_title( '<h1>', '</h1>' ); ?>
 
 				<?php twentyseventeen_edit_link( get_the_ID() ); ?>
